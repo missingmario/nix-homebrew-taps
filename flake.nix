@@ -10,12 +10,12 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
-  }
+  };
 
   outputs = inputs@{ self, homebrew-core, homebrew-cask }: {
     taps = {
       "homebrew/homebrew-core" = homebrew-core;
       "homebrew/homebrew-cask" = homebrew-cask;
     };
-  }
+  };
 }
